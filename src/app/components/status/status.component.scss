@@ -1,0 +1,58 @@
+@import "angular";
+
+.status {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    margin-bottom: 10px;
+  &__item {
+    position: relative;
+    padding: 23px 15px 23px 20px;
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+    background: #f6f5fb;
+    margin-bottom: 10px;
+    &._pink {
+        background: #FFF4F4;
+        .status__title {
+            color: $carrot;
+        }
+        .status__desc {
+            color: $carrot;
+        }
+        .status__icon {
+            color: $carrot;
+        }
+        .status__chevron {
+            color: $carrot;
+        }
+    }
+  }
+
+  &__icon {
+    color: $ligth-fiolet;
+  }
+  
+  &__title {
+    color: $ligth-fiolet;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    color: $ligth-fiolet;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__chevron {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

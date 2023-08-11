@@ -1,0 +1,77 @@
+@import "angular";
+
+.reports {
+  &__title {
+    color: $dark-purpule;
+    font-family: $ff;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    padding: 20px;
+    border-radius: 15px;
+    background: #f6f5fb;
+    &._green {
+      background: #f5f9f9;
+
+      .reports__about, .reports__about, .reports__icon{
+        color: $light-green;
+    }
+        .reports__desc {
+            color: #8DAEAE;
+        }
+  }
+  &._red {
+      background: #FFF4F4;;
+
+      .reports__about,
+      .reports__icon {
+          color: $carrot;
+      }
+      .reports__desc {
+        color: #A27A7A;
+      }
+  }
+  &._pink {
+      background: #FDF9FB;
+      ;
+
+      .reports__about,
+      .reports__icon {
+          color: #C93F8D;
+      }
+
+      .reports__desc {
+          color: #E791BE;
+      }
+  }
+}
+  &__icon {
+    color: $purpul;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    color: $ligth-fiolet;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    color: $ligth-fiolet;
+    font-family: $ff;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="status">
+    <div class="status__item" *ngFor="let item of status" [class._pink]="item.id == 1">
+        <div class="status__icon">
+            <span class="material-icons">{{item.icon}}</span>
+        </div>
+            <div class="status__info">
+                <div class="status__title">{{item.title}}</div>
+                <div class="status__desc">{{item.desc}}</div>
+                <a class="status__chevron" routerLink="/"><span class="material-icons">chevron_right</span></a>
+            </div>
+    </div>
+</div>

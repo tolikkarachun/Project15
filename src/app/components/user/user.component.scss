@@ -1,0 +1,36 @@
+@import "angular";
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  &__img {
+  }
+
+  &__name {
+    color: $dark-purpule;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  &__profession {
+    color: $dark-purpule;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 11px;
+    cursor: pointer;
+  }
+
+  &__change {
+    color: $dark-purpule;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+}
