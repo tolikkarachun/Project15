@@ -12,6 +12,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   &__item {

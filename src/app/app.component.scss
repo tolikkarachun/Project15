@@ -3,3 +3,13 @@
 h1 {
     color: $gray;
 }
+app-header {
+    @include tablet {
+        display: none;
+    }
+}
+app-navbar {
+    @include tablet {
+        order: -1;
+    }
+}

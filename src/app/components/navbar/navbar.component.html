@@ -1,9 +1,38 @@
 <nav class="nav">
   <ul class="nav__ul">
-    <li class="nav__li"><a class="nav__a _active" routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="_active"><span class="material-icons">home</span></a></li>
-    <li class="nav__li"><a class="nav__a" routerLinkActive="_active" routerLink="/profile"><span class="material-icons">persons</span></a></li>
-    <li class="nav__li"><a class="nav__a" routerLinkActive="_active" routerLink="/messengers"><span class="material-icons">messengers</span></a></li>
-    <li class="nav__li"><a class="nav__a" routerLinkActive="_active" routerLink="/book"><span class="material-icons">book</span></a></li>
-    <li class="nav__li"><a class="nav__a" routerLinkActive="_active" routerLink="/moon"><span class="material-icons">dark_mode</span></a></li>
+    <li class="nav__li">
+      <a
+        class="nav__a _active"
+        routerLink="/"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="_active"
+        ><span class="material-icons">home</span>
+        <span class="nav__link-title">Home</span>
+      </a>
+    </li>
+    <li class="nav__li">
+      <a class="nav__a" routerLinkActive="_active" routerLink="/profile"
+        ><span class="material-icons">persons</span>
+        <span class="nav__link-title">Profile</span>
+      </a>
+    </li>
+    <li class="nav__li">
+      <a class="nav__a" routerLinkActive="_active" routerLink="/messengers"
+        ><span class="material-icons">messengers</span>
+        <span class="nav__link-title">Messengers</span>
+      </a>
+    </li>
+    <li class="nav__li">
+      <a class="nav__a" routerLinkActive="_active" routerLink="/book"
+        ><span class="material-icons">book</span>
+        <span class="nav__link-title">Stories</span>
+      </a>
+    </li>
+    <li class="nav__li">
+      <a class="nav__a" routerLinkActive="_active" routerLink="/moon"
+        ><span class="material-icons">dark_mode</span>
+        <span class="nav__link-title">Dark</span>
+      </a>
+    </li>
   </ul>
 </nav>
